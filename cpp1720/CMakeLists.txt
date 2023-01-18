@@ -9,7 +9,9 @@ add_executable(cpp1720
 #variant_unions.cpp
 #span.cpp
 #optional.cpp
-stack_heap.cpp
+#stack_heap.cpp
+lvalue_rvalue.cpp
+#move.cpp
 )
 
 install(TARGETS cpp1720
