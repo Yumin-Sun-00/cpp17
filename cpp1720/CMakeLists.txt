@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(cpp1720
 #variant_unions.cpp
 #span.cpp
-optional.cpp
+#optional.cpp
+stack_heap.cpp
 )
 
 install(TARGETS cpp1720
