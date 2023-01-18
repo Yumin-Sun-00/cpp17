@@ -82,6 +82,9 @@ int main()
     // do we have a way that the function only allow temporary object?
     printNameRR(fn+ln);
 
+    // why it is good, if we know something is temporary?
+    // because we know it is gonna disappear, we can steal the resources
+
 
     return 0;
 }
