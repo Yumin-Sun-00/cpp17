@@ -10,8 +10,12 @@ add_executable(cpp1720
 #span.cpp
 #optional.cpp
 #stack_heap.cpp
-lvalue_rvalue.cpp
+#lvalue_rvalue.cpp
 #move.cpp
+#malloc_new.cpp
+#array.cpp
+static.cpp
+main_static.cpp #for static.cpp
 )
 
 install(TARGETS cpp1720
