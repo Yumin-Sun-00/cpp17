@@ -14,8 +14,12 @@ add_executable(cpp1720
 #move.cpp
 #malloc_new.cpp
 #array.cpp
-static.cpp
-main_static.cpp #for static.cpp
+#static.cpp
+#main_static.cpp #for static.cpp
+#localstatic.cpp
+main_linker.cpp
+Log.cpp
+Log.h
 )
 
 install(TARGETS cpp1720
