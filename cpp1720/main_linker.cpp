@@ -100,7 +100,7 @@ int main()
 //! 5
 
 
-//! 5: make add static, so it is internal for this translation unit, then we do not get linker error
+//! 6: make add static, so it is internal for this translation unit, then we do not get linker error
 #include <iostream>
 
 void log(const char* message);
@@ -114,7 +114,7 @@ static int add(int a, int b)
 int main()
 {
 }
-//! 5
+//! 6
 #endif
 
 #include "Log.h"

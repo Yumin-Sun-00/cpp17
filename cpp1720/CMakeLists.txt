@@ -13,6 +13,7 @@ add_executable(cpp1720
 #lvalue_rvalue.cpp
 #move.cpp
 #malloc_new.cpp
+globallocalallocation.cpp
 #array.cpp
 #static.cpp
 #main_static.cpp #for static.cpp
