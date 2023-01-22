@@ -5,7 +5,7 @@
 
 // static outside class/struct
 // the linkgage of that symbol you declared is static
-// it going to be internal: visible only for that transition unit you have defined in.
+// it going to be internal: visible only for that transition unit you have DEFINED in.
 
 /*
 one static, the other non-static: ok
