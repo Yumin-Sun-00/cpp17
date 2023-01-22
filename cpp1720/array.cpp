@@ -2,6 +2,9 @@
 #include <iostream>
 using namespace std;
 
+// 1. array to pointer conversions:
+// not happend with decltype, address-of, sizeof, typeid, initialize a reference to an array
+
 
 // expression reading order: inside out, right to left
 
