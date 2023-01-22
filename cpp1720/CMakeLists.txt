@@ -5,6 +5,14 @@ project(cpp1720 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include_directories(
+Dependencies/glfw/include
+)
+
+find_library(GLFW_LIB NAMES libglfw3.a PATHS "${CMAKE_SOURCE_DIR}/Dependencies/glfw/lib-x86_64")
+
+message("GLFW_LIB: " ${GLFW_LIB})
+
 add_executable(cpp1720
 #variant_unions.cpp
 #span.cpp
@@ -27,7 +35,14 @@ add_executable(cpp1720
 #mutable.cpp
 #const.cpp
 #typeconversions.cpp
-staticlib.cpp
+lib_staticlinking.cpp
+)
+
+target_link_libraries(cpp1720
+    ${GLFW_LIB}
+    "-framework Cocoa"
+    "-framework OpenGL"
+    "-framework IOKit"
 )
 
 install(TARGETS cpp1720
