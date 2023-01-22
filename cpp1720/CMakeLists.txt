@@ -9,18 +9,25 @@ add_executable(cpp1720
 #variant_unions.cpp
 #span.cpp
 #optional.cpp
+#instantiate.cpp
 #stack_heap.cpp
 #lvalue_rvalue.cpp
 #move.cpp
 #malloc_new.cpp
-globallocalallocation.cpp
+#globallocalallocation.cpp
 #array.cpp
 #static.cpp
 #main_static.cpp #for static.cpp
 #localstatic.cpp
-main_linker.cpp
-Log.cpp
-Log.h
+#main_linker.cpp
+#Log.cpp
+#Log.h
+#Log2.cpp
+#Log2.h
+#mutable.cpp
+#const.cpp
+#typeconversions.cpp
+staticlib.cpp
 )
 
 install(TARGETS cpp1720
