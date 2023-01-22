@@ -57,16 +57,6 @@ int main()
 }
 //! 2
 
-//! 3: log() not used, no linker error
-#include <iostream>
-
-void log(const char* message);
-
-int main()
-{
-}
-//! 3
-
 //! 4: log() not defined and not used, no linker error, because linker does not need to resolve the symbol.
 #include <iostream>
 
@@ -117,6 +107,7 @@ int main()
 //! 6
 #endif
 
+//!7 start to use header
 #include "Log.h"
 
 static int add(int a, int b)
@@ -129,4 +120,4 @@ int main()
 {
     add(2,3);
 }
-//! 5
+//! 7
