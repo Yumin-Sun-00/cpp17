@@ -1,5 +1,3 @@
-#include <iostream>
-
 // static inside class/struct
 // share memeory across all instances, only one instance of that static variable exists
 // same to the static method inside the class
@@ -9,11 +7,20 @@
 // the linkgage of that symbol you declared is static
 // it going to be internal: visible only for that transition unit you have defined in.
 
+/*
+one static, the other non-static: ok
+the one defined as "static" will take precedence over the other one, meaning that the non-static variable will not be accessible.
 
-// duplicate symbol, linker command failed
-// because in main.cpp we also define s_var
-// and here s_var in this cpp is not static, so it is visible to other translation unit(main.cpp)
-//int s_var = 5;
+two static (same name) in different cpp: ok
 
-// but if you define it as static, everything works well
-static int s_var = 5;
+two static or non-static (same name) in the same cpp: redfinition, compile error
+
+two non-static (same name) in different cpp: duplicate symbol, linker error
+*/
+#include <iostream>
+int s_var = 5;
+
+void out()
+{
+    std::cout << "static.cpp " <<s_var<<std::endl;
+}

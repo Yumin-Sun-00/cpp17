@@ -8,13 +8,13 @@
 // static outside class/struct
 // the linkgage of that symbol you declared is static
 // it going to be internal: visible only for that transition unit you have defined in.
-int s_var = 10;
+
+static int s_var = 100;
+void out();
 int main()
 {
-    std::cout<<s_var;
+    std::cout<<"main.cpp "<< s_var <<std::endl;
+    out();
     std::cin.get();
     return 0;
 }
-
-// one duplicate symbol
-// linker command failed
