@@ -17,3 +17,11 @@ int main()
     std::cout<<a<<std::endl;
     std::cin.get();
 }
+
+
+// If you use lib + dll，you don't need __declspec(dllimport)
+// because all the functions or variables you want to import have defined in lib as pointer;
+
+// but if you use LoadLibary API to import dll,
+// with __declspec(dllimport) you can tell the compiler which function or variable you want to import,
+// it will reduce the import time
