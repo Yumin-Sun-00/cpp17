@@ -9,7 +9,9 @@ include_directories(
 Dependencies/glfw/include
 )
 
-find_library(GLFW_LIB NAMES libglfw3.a PATHS "${CMAKE_SOURCE_DIR}/Dependencies/glfw/lib-x86_64")
+#to link static library
+#libglfw3.a
+find_library(GLFW_LIB NAMES libglfw.3.dylib PATHS "${CMAKE_SOURCE_DIR}/Dependencies/glfw/lib-x86_64")
 
 message("GLFW_LIB: " ${GLFW_LIB})
 
@@ -35,7 +37,8 @@ add_executable(cpp1720
 #mutable.cpp
 #const.cpp
 #typeconversions.cpp
-lib_staticlinking.cpp
+#lib_staticlinking.cpp
+lib_dynamiclinking.cpp
 )
 
 target_link_libraries(cpp1720
