@@ -46,7 +46,9 @@ add_executable(cpp1720
 #namespace.cpp
 #smartpointers.cpp
 #copy.cpp
-this.cpp
+#this.cpp
+#dynamicarray.cpp
+staticarray.cpp
 )
 
 #target_link_libraries(cpp1720
