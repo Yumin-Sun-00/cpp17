@@ -45,7 +45,8 @@ add_executable(cpp1720
 #new.cpp
 #namespace.cpp
 #smartpointers.cpp
-copy.cpp
+#copy.cpp
+this.cpp
 )
 
 #target_link_libraries(cpp1720
