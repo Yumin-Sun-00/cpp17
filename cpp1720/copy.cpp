@@ -13,11 +13,22 @@ public:
         m_buffer[m_size] = 0;
     }
 
-    String(const String& string)
+    // simulate the c++ shallow copy
+    /*
+    String(const String& other) : m_buffer(other.m_buffer), m_size(other.m_buffer)
     {
-        m_size = string.m_size;
-        m_buffer = new char[string.m_size];
-        memcpy(m_buffer, string.m_buffer, m_size + 1);
+        // a more exiting way to do this
+        //memcpy(this, &other, sizeof(String));
+    }
+    */
+
+    // = delete : prevent you from copying
+
+    // deep copy
+    String(const String& other) : m_size(other.m_buffer)
+    {
+        m_buffer = new char[other.m_size + 1];
+        memcpy(m_buffer, other.m_buffer, m_size + 1);
     }
 
     ~String()
