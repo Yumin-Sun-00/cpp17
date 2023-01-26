@@ -23,7 +23,7 @@ add_executable(cpp1720
 #stack_heap.cpp
 #lvalue_rvalue.cpp
 #move.cpp
-move2.cpp
+#move2.cpp
 #malloc_new.cpp
 #globallocalallocation.cpp
 #array.cpp
@@ -50,6 +50,7 @@ move2.cpp
 #this.cpp
 #dynamicarray.cpp
 #staticarray.cpp
+templates.cpp
 )
 
 #target_link_libraries(cpp1720
