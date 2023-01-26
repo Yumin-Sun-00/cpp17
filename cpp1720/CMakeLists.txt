@@ -50,7 +50,8 @@ add_executable(cpp1720
 #this.cpp
 #dynamicarray.cpp
 #staticarray.cpp
-templates.cpp
+#templates.cpp
+macro.cpp
 )
 
 #target_link_libraries(cpp1720
