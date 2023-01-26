@@ -1,7 +1,9 @@
 #include <iostream>
 
 
-// std::move
+// std::move: When you want to convert an existing object to a temporary
+// help you do the manuall cast (_Ty&&) more elegant in a template way
+
 // move assignment operator: when you want to move something into the other
 // which is already exist.
 
@@ -86,30 +88,6 @@ private:
     char* m_Data;
 };
 
-
-class Entity
-{
-public:
-    Entity(const String& name) : m_Name(name) // copy
-    {
-
-    }
-
-    Entity(String&& name) // This is still a copy: m_Name(name)
-        : m_Name(std::move(name))
-    {
-
-    }
-
-    void PrintName() const
-    {
-        m_Name.Print();
-    }
-
-private:
-    String m_Name;
-};
-
 int main()
 {
 
@@ -121,7 +99,7 @@ int main()
     //String dest2((String&&)str); // same, but not elegant, and not always work
     String dest3(std::move(str));
 
-    // this is not a move assignment
+    // this is NOT a move assignment
     // because dest4 is a new object that going to be constructed
     // so at the end it still takes the move constructor
     //String dest4 = std::move(str);
