@@ -51,7 +51,12 @@ add_executable(cpp1720
 #dynamicarray.cpp
 #staticarray.cpp
 #templates.cpp
-macro.cpp
+#macro.cpp
+#dynamiccasting.cpp
+#functionpointer.cpp
+stringview.cpp
+#smallstringoptimization.cpp
+#string.cpp
 )
 
 #target_link_libraries(cpp1720
