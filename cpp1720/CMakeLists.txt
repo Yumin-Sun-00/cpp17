@@ -57,7 +57,8 @@ add_executable(cpp1720
 #stringview.cpp
 #smallstringoptimization.cpp
 #string.cpp
-TypePunning.cpp
+#TypePunning.cpp
+virtualDestructor.cpp
 )
 
 #target_link_libraries(cpp1720
