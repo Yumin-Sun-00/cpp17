@@ -4,6 +4,20 @@
 struct Entity
 {
     int x, y;
+
+    int* GetPosition()
+    {
+        // it is terrible and slow
+        int* array = new int[2];
+        return array;
+    }
+
+    int* GetPositionFaster()
+    {
+        // no copy, no memory allocation
+        // you can read & write
+        return &x;
+    }
 };
 
 int main()
@@ -26,4 +40,13 @@ int main()
 
     int y = *(int*)((char*)&e + 4);
     std::cout<<y<<std::endl;
+
+
+    int* pos = e.GetPosition();
+
+    // I can also change it
+    pos[0] = 2;
+
+
+    // you can also use reinterprate_cast to do the same thing.
 }
