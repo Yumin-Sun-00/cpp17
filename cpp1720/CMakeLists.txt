@@ -54,9 +54,10 @@ add_executable(cpp1720
 #macro.cpp
 #dynamiccasting.cpp
 #functionpointer.cpp
-stringview.cpp
+#stringview.cpp
 #smallstringoptimization.cpp
 #string.cpp
+TypePunning.cpp
 )
 
 #target_link_libraries(cpp1720
