@@ -58,7 +58,12 @@ add_executable(cpp1720
 #smallstringoptimization.cpp
 #string.cpp
 #TypePunning.cpp
-virtualDestructor.cpp
+#virtualDestructor.cpp
+cpp17.cpp
+cpp20.cpp
+#benchmarking.cpp
+#cachelocality.cpp
+noobyhabits.cpp
 )
 
 #target_link_libraries(cpp1720
