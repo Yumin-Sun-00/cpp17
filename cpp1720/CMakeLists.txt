@@ -4,7 +4,7 @@ project(cpp1720 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
+set(CMAKE_CXX_EXTENSIONS OFF)
 #include_directories(
 #Dependencies/glfw/include
 #)
@@ -60,10 +60,10 @@ add_executable(cpp1720
 #TypePunning.cpp
 #virtualDestructor.cpp
 cpp17.cpp
-cpp20.cpp
+#cpp20.cpp
 #benchmarking.cpp
 #cachelocality.cpp
-noobyhabits.cpp
+#noobyhabits.cpp
 )
 
 #target_link_libraries(cpp1720
