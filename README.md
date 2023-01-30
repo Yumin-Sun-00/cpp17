@@ -1,4 +1,4 @@
-# Practices for c++17
+# Practices for c++17, some basic concepts, nooby habits
 
 * Guaranteed copy/move elision
 * nodiscard
