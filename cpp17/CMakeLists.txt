@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(cpp1720 LANGUAGES CXX)
+project(cpp17 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,7 +15,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 #message("GLFW_LIB: " ${GLFW_LIB})
 
-add_executable(cpp1720
+add_executable(cpp17
 #variant_unions.cpp
 #span.cpp
 #optional.cpp
@@ -66,12 +66,12 @@ cpp17.cpp
 #noobyhabits.cpp
 )
 
-#target_link_libraries(cpp1720
+#target_link_libraries(cpp17
 #    ${GLFW_LIB}
 #    "-framework Cocoa"
 #    "-framework OpenGL"
 #    "-framework IOKit"
 #)
 
-install(TARGETS cpp1720
+install(TARGETS cpp17
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
